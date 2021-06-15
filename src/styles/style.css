@@ -77,13 +77,14 @@ a{
 
 
 /* Section -1 */
-#section-1
+#section
 {
     width : 100vw;
     height : 600px;
 
     position : relative;
     overflow: hidden;
+    
 }
 
 .section-video
@@ -207,12 +208,7 @@ a{
     monospace;
 }
 
-/* Section 2 */
-#section-2 {
-    width: 100vw;
-    height: 600px;
-    position: relative;
-}
+
 .section-container
 {
     position : relative;
@@ -240,4 +236,9 @@ a{
 .sec-bg1
 {
     background-image: url(../images/bg1.jpeg);
+}
+
+.sec-bg2
+{
+    background-image: url(../images/bg2.jfif);
 }
