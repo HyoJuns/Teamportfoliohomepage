@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 *
 {
     margin : 0;
     padding : 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 62.5%;
+}
+body
+{
+    /* Example : 1rem = 10px;    0.5rem = 5px   */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+
+    min-height: 100vh;
 }
 ul{
     list-style: none;
@@ -30,6 +44,15 @@ a{
     text-align: center;
     
 }
+#gnb>ul>li:nth-child(1)
+{
+    width: 150px;
+    padding-right: 30px;
+}
+#gnb > ul > li:nth-child(2)
+{
+    padding-right: 30px;
+}
 #gnb > ul > li > a{
     color: rgb(51, 50, 50);
     text-transform: uppercase;
@@ -51,8 +74,52 @@ a{
     text-decoration: underline;
 }
 
-html
+
+
+/* Section -1 */
+#section-1
 {
-    font-size: 62.5%;
+    width : 100vw;
+    height : 100vh;
+
+    position : relative;
 }
 
+.section-video
+{
+    width : inherit;
+    height : inherit;
+    
+}
+.section-video::after
+{
+    content: '';
+
+    width: inherit;
+    height : 1000px;
+    position : absolute;
+
+    top : 0;
+    left : 0;
+
+    background-color: rgba(0,0,0,0.5);
+
+}
+.section-video video
+{
+    width : 1800px;
+
+    opacity: .4;
+}
+
+.section-text
+{
+    width : 300px;
+    position : absolute;
+    left : 60%;
+    top :50%;
+
+    transform: translateX(-20%);
+
+
+}
