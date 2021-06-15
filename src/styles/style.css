@@ -80,9 +80,10 @@ a{
 #section-1
 {
     width : 100vw;
-    height : 100vh;
+    height : 600px;
 
     position : relative;
+    overflow: hidden;
 }
 
 .section-video
@@ -96,7 +97,7 @@ a{
     content: '';
 
     width: inherit;
-    height : 1000px;
+    height :600px;
     position : absolute;
 
     top : 0;
@@ -117,22 +118,21 @@ a{
 .section-text
 {
     width : 400px;
+    height: 200px;
     position : absolute;
-    left : 70%;
-    top :50%;
+    right : 0;
+    top :30%;
 
     transform: translateX(-20%);
-
-
 }
-.section-subtext
-{
-    width : 400px;
-    position : absolute;
-    right : 70%;
-    top :50%;
+.section-left-text {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 10%;
+    top: 35%;
 
-    transform: translateX(20%);
+    transform: translateX(-20%);
 }
 .section-heading
 {
@@ -157,6 +157,35 @@ a{
 
     line-height: 0.8;
 }
+.section-heading3 {
+    font-size: 8rem;
+    color: rgba(255, 255, 255, .9);
+    text-shadow: 1px 3px 3px #222, 3px 1px 2px #fff;
+    text-overflow: clip;
+
+    transform: rotateY(-40deg);
+
+    line-height: 0.8;
+}
+.section-p {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, .9);
+    text-shadow: 1px 1px 1px #222;
+    text-overflow: clip;
+
+    transform: rotateY(-40deg);
+
+    line-height: 1.5;
+}
+.section-p>a {
+    color : white; 
+    text-decoration: underline;
+    transition: all .4s;
+}
+.section-p>a:hover
+{
+    color : rgb(235, 175, 232);
+}
 .section-text > p
 {
     font-size: 4.5rem;
@@ -166,6 +195,8 @@ a{
 
     transform: rotateY(20deg);
 }
+
+
 .pacifico
 {
     font-family: 'Pacifico',cursive;
@@ -174,4 +205,39 @@ a{
 {
     font-family: 'Source Code Pro',
     monospace;
+}
+
+/* Section 2 */
+#section-2 {
+    width: 100vw;
+    height: 600px;
+    position: relative;
+}
+.section-container
+{
+    position : relative;
+    width : 100vw;
+    height : 600px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+.section-container::after
+{
+    content: '';
+    width : 100vw;
+    height: 600px;
+    position :absolute;
+    top : 0;
+    left: 0;
+
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.sec-bg1
+{
+    background-image: url(../images/bg1.jpeg);
 }
