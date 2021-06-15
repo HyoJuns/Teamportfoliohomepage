@@ -8,7 +8,7 @@
 
 ### 사이트 주소
 
-[이동]: https://hyojuns.github.io/Teamportfoliohomepage/	"홈페이지 이동"
+[https://hyojuns.github.io/Teamportfoliohomepage/]: 이동하기	"홈페이지 이동"
 
 
 
