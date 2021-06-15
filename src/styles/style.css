@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Pacifico&family=Source+Code+Pro:wght@400;700&display=swap');
 
 *
 {
@@ -107,19 +107,71 @@ a{
 }
 .section-video video
 {
+    position : relative;
     width : 1800px;
 
     opacity: .4;
+    z-index: -1;
 }
 
 .section-text
 {
-    width : 300px;
+    width : 400px;
     position : absolute;
-    left : 60%;
+    left : 70%;
     top :50%;
 
     transform: translateX(-20%);
 
 
+}
+.section-subtext
+{
+    width : 400px;
+    position : absolute;
+    right : 70%;
+    top :50%;
+
+    transform: translateX(20%);
+}
+.section-heading
+{
+    font-size: 12rem;
+    color : rgba(255,255,255,.9);
+    text-transform: uppercase;
+    text-shadow: 1px 3px 3px #222, 3px 1px 2px #fff;
+    text-overflow: clip;
+
+    transform: rotateY(20deg);
+
+    line-height: 0.8;
+}
+.section-heading2 {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, .9);
+    text-transform: uppercase;
+    text-shadow: 1px 3px 3px #222, 3px 1px 2px #fff;
+    text-overflow: clip;
+
+    transform: rotateY(-40deg);
+
+    line-height: 0.8;
+}
+.section-text > p
+{
+    font-size: 4.5rem;
+    color : rgba(255, 255, 255, .9);
+    text-shadow: 1px 3px 3px #222,
+    3px 1px 2px #fff;
+
+    transform: rotateY(20deg);
+}
+.pacifico
+{
+    font-family: 'Pacifico',cursive;
+}
+.sourceCode
+{
+    font-family: 'Source Code Pro',
+    monospace;
 }
