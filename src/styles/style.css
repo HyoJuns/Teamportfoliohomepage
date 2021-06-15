@@ -45,18 +45,28 @@ a{
     display: flex;
 
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+
+    padding : 10px;
 }
 
+#gnb > ul
+{
+    width: 1000px;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    margin-right: 40px;
+}
 #gnb > ul > li
 {
-    display: inline-block;
-    
-    width: 100px;
-    height : 50px;
-    padding: 5px 0;
-    font-size: 14px;
+    height: 100px;
+    padding-top : 40px;
     text-align: center;
     position: relative;
 }
@@ -68,20 +78,11 @@ a{
     object-position: center;
 }
 
-#gnb>ul>li:nth-child(1) {
-    width: 150px;
-    padding-right: 30px;
-}
-
-#gnb>ul>li:nth-child(2) {
-    width : 150px;
-    padding-right: 30px;
-}
-
 #gnb>ul>li>a {
     color: rgb(51, 50, 50);
     text-transform: uppercase;
-
+    font-weight: bold;
+    letter-spacing: 1.2px;
 }
 
 #gnb .depth2 {
@@ -99,12 +100,25 @@ a{
 
     position : absolute;
     top : 40px;
-    left : -20px;
+    left : 50%;
+    transform: translateX(-50%);
     z-index: 10;
+}
+#gnb>ul>li:hover>.depth2>li
+{
+    width: 100px;
+    padding-top : .2rem;
+    background-color: black;
 }
 #gnb>ul>li:hover>.depth2>li>a
 {
-    color : rgba(255, 255, 255, .7);
+    color : rgb(255, 255, 255);
+
+    text-transform: uppercase;
+
+    font-size: 1.2rem;
+
+    letter-spacing: 1.2px;
 }
 
 #gnb>ul>li>a:hover {
