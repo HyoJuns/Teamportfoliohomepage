@@ -8,7 +8,7 @@
 
 ### 사이트 주소
 
-[홈페이지]: https://hyojuns.github.io/Teamportfoliohomepage/	"홈페이지 이동"
+LINK : [index]: https://hyojuns.github.io/Teamportfoliohomepage/	"홈페이지 이동"
 
 
 
