@@ -18,6 +18,8 @@ body
     /* Example : 1rem = 10px;    0.5rem = 5px   */
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
+
+    overflow-x: hidden;
 }
 .wrapper
 {
@@ -34,27 +36,36 @@ a{
 
 
 /* #region Header Style */
-#main__header {
+#main_header {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     text-align: center;
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-#gnb {
-    position: absolute;
-    right: 0;
-    top: 40px;
-
-}
-
-#gnb>ul>li {
-    float: left;
+#gnb > ul > li
+{
+    display: inline-block;
+    
     width: 100px;
+    height : 50px;
     padding: 5px 0;
     font-size: 14px;
     text-align: center;
-
+    position: relative;
+}
+.logo_title > a > img
+{
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
 }
 
 #gnb>ul>li:nth-child(1) {
@@ -63,13 +74,13 @@ a{
 }
 
 #gnb>ul>li:nth-child(2) {
+    width : 150px;
     padding-right: 30px;
 }
 
 #gnb>ul>li>a {
     color: rgb(51, 50, 50);
     text-transform: uppercase;
-    display: block;
 
 }
 
@@ -85,6 +96,15 @@ a{
 
 #gnb>ul>li:hover>.depth2 {
     display: block;
+
+    position : absolute;
+    top : 40px;
+    left : -20px;
+    z-index: 10;
+}
+#gnb>ul>li:hover>.depth2>li>a
+{
+    color : rgba(255, 255, 255, .7);
 }
 
 #gnb>ul>li>a:hover {
@@ -103,10 +123,6 @@ a{
 
     position : relative;
     overflow: hidden;
-}
-.containerBox-reverse
-{
-    flex-direction: row-reverse;
 }
 .section-containerBox
 {
@@ -286,4 +302,38 @@ a{
     background-image: url(../images/bg3.jpeg);
 }
 
+/* #endregion */
+
+/* #region Footer */
+#footer
+{
+    width : 100vw;
+    height : 80px;
+
+    background-color: rgb(48, 47, 47);
+    color : white;
+
+
+}
+.footer-containerBox
+{
+    width: inherit;
+    height: inherit;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.iconbox > ul > li
+{
+    display: inline-block;
+    padding : 10px;
+}
+.iconbox>ul>li>a
+{
+    color : white;
+}
 /* #endregion */
