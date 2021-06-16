@@ -53,7 +53,7 @@ a{
 
 #gnb > ul
 {
-    width: 30vw;
+    width: 40vw;
     display: flex;
 
     flex-direction: row;
@@ -70,6 +70,10 @@ a{
     padding-left: 20px;
     text-align: center;
     position: relative;
+}
+#gnb > ul > li > a
+{
+    font-size: 2rem;
 }
 .logo_title > a > img
 {
@@ -109,8 +113,8 @@ a{
 }
 #gnb>ul>li:hover>.depth2>li
 {
-    width: 100px;
-    padding-top : .2rem;
+    width: 180px;
+    padding-top : .4rem;
     background-color: black;
 }
 #gnb>ul>li:hover>.depth2>li>a
@@ -119,7 +123,7 @@ a{
 
     text-transform: uppercase;
 
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 
     letter-spacing: 1.2px;
 }
