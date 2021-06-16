@@ -53,7 +53,7 @@ a{
 
 #gnb > ul
 {
-    width: 60vw;
+    width: 30vw;
     display: flex;
 
     flex-direction: row;
@@ -61,12 +61,13 @@ a{
     align-items: center;
     flex-grow: 1;
 
-    margin-right: 40px;
+    margin-right: 30px;
 }
 #gnb > ul > li
 {
     height: 100px;
     padding-top : 40px;
+    padding-left: 20px;
     text-align: center;
     position: relative;
 }
@@ -196,18 +197,18 @@ a{
 .section-left-box
 {
     position : absolute;
-    left : 0;
+    left : 5vw;
     transform: translateX(20px);
 
     width : 400px;
     z-index: 1;
 
-    margin-left: 20px;
+    margin-left: 50px;
     padding-left: 30px;
 }
 .section-right-box {
     position: absolute;
-    right: 100px;
+    right: 5vw;
     transform: translateX(-20px);
     width: 400px;;
     z-index: 1;
