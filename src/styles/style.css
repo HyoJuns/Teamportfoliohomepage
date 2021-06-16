@@ -212,7 +212,8 @@ a{
     transform: translateX(-20px);
     width: 400px;;
     z-index: 1;
-
+    margin-right: 100px;
+    padding-right: 30px;
 }
 
 .section-title-heading
